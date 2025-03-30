@@ -25,6 +25,8 @@ for question in questions:
         
     guess= input("Enter(A, B, C, D): ").upper()
     guesses.append(guess)
+    while guess not in ('A', 'B', 'C', 'D'):
+        guess = input("Invalid choice. Please enter A, B, C, or D: ").upper()
     if guess == answers[question_num]:
         score += 1
         print("CORRECT!")

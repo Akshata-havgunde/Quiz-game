@@ -18,8 +18,8 @@ score = 0
 question_num = 0
 
 for question in questions:
-    print("-----------------------------")
-    print(questions)
+    print("------------------------------------------------")
+    print(question)
     for option in options[question_num]:
         print(option)
         
@@ -33,18 +33,18 @@ for question in questions:
         print(f"{answers[question_num]} is the correct answer")
     question_num += 1 
     
-print("-----------------------------")
-print("          RESULTS            ")
-print("-----------------------------")
+print("-------------------------------------------------")
+print("                    RESULTS                      ")
+print("-------------------------------------------------")
 
 print("Answers: ", end="")
 for answer in answers:
-    print(answer, end="")
+    print(answer, end=" ")
 print()
 
 print("Guesses: ", end="")
 for guess in guesses:
-    print(guess, end="")
+    print(guess, end=" ")
 print()
 
 score = int((score / len(questions)) * 100)
